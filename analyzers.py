@@ -1,19 +1,3 @@
-"""
-analyzers.py - Analyzer Layer
-==============================
-Analisis data dengan ABC, Template Method, dan visualisasi matplotlib/seaborn.
-
-Perbaikan OOP & SOLID:
-- Abstraksi kuat: BaseStudentAnalyzer mendefinisikan kontrak yang lengkap
-- Template Method Pattern: alur analisis distandardisasi di base class,
-  subclass hanya override bagian yang beda
-- Pewarisan: semua analyzer mewarisi helper statistik dari base class
-- Polimorfisme: setiap analyzer punya implementasi analyze() & visualize() sendiri
-- OCP: analyzer baru cukup extends BaseStudentAnalyzer
-- SRP: setiap analyzer hanya urus satu domain analisis
-- Visualisasi: tiap analyzer punya method visualize() yang menghasilkan chart
-"""
-
 from __future__ import annotations
 
 import os
