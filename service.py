@@ -1,17 +1,3 @@
-"""
-service.py - Service Layer
-===========================
-Mengorkestrasikan semua analyzer dan menghasilkan laporan.
-
-Perbaikan OOP & SOLID:
-- Facade Pattern: AIStudentAnalysisService menyembunyikan kompleksitas analyzer
-- Observer Pattern (hooks): on_analysis_complete dipanggil setiap selesai analisis,
-  memungkinkan listener eksternal (logger, notifier, dsb.) tanpa ubah service
-- DIP: service bergantung pada IRepository (abstrak), bukan StudentRepository konkret
-- OCP: analyzer baru cukup ditambah ke registry, tidak ubah run_all()
-- SRP: service hanya orkestrator; kalkulasi ada di analyzer, akses data di repository
-"""
-
 from __future__ import annotations
 
 import json
