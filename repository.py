@@ -1,17 +1,3 @@
-"""
-repository.py - Repository & Specification Layer
-=================================================
-Memisahkan data-access logic dari business logic (SRP).
-
-Perbaikan OOP & SOLID:
-- Repository Pattern: StudentRepository sebagai satu-satunya pintu ke data
-- Specification Pattern: kondisi filter dienkapsulasi dalam objek Specification
-  → Open-Closed: tambah filter baru cukup tambah Spec baru, repo tidak berubah
-- Interface Segregation: IRepository hanya mendefinisikan operasi yang benar-benar
-  dibutuhkan consumer
-- Dependency Inversion: consumer bergantung pada abstrak IRepository, bukan konkret
-"""
-
 from __future__ import annotations
 
 import csv
