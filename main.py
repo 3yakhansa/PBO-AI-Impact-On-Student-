@@ -1,10 +1,3 @@
-"""
-main.py - Entry Point (CLI Layer)
-===================================
-Menu interaktif untuk AI Student Impact Analysis System.
-Setiap menu analisis sekarang juga menghasilkan chart visualisasi.
-"""
-
 from __future__ import annotations
 
 import os
