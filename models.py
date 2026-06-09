@@ -1,15 +1,3 @@
-"""
-models.py - Model Layer
-======================
-Mendefinisikan entitas domain dengan enkapsulasi ketat.
-
-Perbaikan OOP:
-- Enkapsulasi: field privat via __slots__ + property, setter diblokir (immutable)
-- Validasi terpusat di _validate(), bukan tersebar
-- Ditambah computed properties yang richer
-- __eq__ dan __hash__ untuk kebutuhan set/dict
-"""
-
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import ClassVar
